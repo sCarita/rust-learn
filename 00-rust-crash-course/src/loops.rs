@@ -1,7 +1,7 @@
 // Loops - Used to iterate until a condition is met
 
 pub fn run() {
-  let mut count = 0;
+  let _count = 0;
 
   // Infinite Loop
   // loop {
