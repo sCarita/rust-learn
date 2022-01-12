@@ -20,6 +20,7 @@ mod structs;
 mod enums;
 mod cli;
 mod hashmaps;
+mod files;
 
 fn main() {
     println!("🖨 print");
@@ -66,4 +67,7 @@ fn main() {
 
     println!("🗺 hashmaps");
     hashmaps::run();
+
+    println!("🗄 files");
+    files::run();
 }
