@@ -22,7 +22,26 @@ mod cli;
 mod hashmaps;
 mod files;
 
+fn modifies(x: &mut f64) {
+    *x = 1.0;
+}
+
 fn main() {
+    let mut res: f64 = 0.0;
+    modifies(&mut res);
+    println!("res is {}", res);
+
+    let mut w: i32 = 7;
+    w = 10;
+
+    println!("{:?}", w);
+
+    let x: &i32 = &7;
+    assert_eq!(*x, 7);
+    let y: &mut i32 = &mut 9;
+    *y = 11;
+    assert_eq!(*y, 11);
+
     println!("🖨 print");
     print::run();
 
